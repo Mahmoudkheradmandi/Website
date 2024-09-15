@@ -1,0 +1,12 @@
+
+
+<body>
+        <div class="order-summary">
+            <p> your order number : {{ order.id }}</p>
+        </div>
+        <form action="." method="post">
+            {% csrf_token %}
+            <input class="primary-btn order-submit" value="Online Payment">
+        </form>
+</body>
+
